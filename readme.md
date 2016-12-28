@@ -28,7 +28,7 @@ TimeLineView 继承了 UIView 并重载了 drawRect: 方法。你可以通过下
 
 ## Demo
 
-用 Xcode 8 打开 TimeLineDemo.xcodeproj。这里演示了如何通过自定义 UITableViewCell（TimeLine.cell） 和 TimeLineView 实现完整的时间线效果。
+用 Xcode 8 打开 TimeLineDemo.xcodeproj。这里演示了如何通过自定义 UITableViewCell（TimeLineCell） 和 TimeLineView 实现完整的时间线效果。
 
 有任何问题和建议，请与[作者](kmyhy@126.com)联系。
 
