@@ -13,6 +13,24 @@
 		1254F0D21E13B459007D897F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1254F0D01E13B459007D897F /* Main.storyboard */; };
 		1254F0D41E13B459007D897F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1254F0D31E13B459007D897F /* Assets.xcassets */; };
 		1254F0D71E13B459007D897F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1254F0D51E13B459007D897F /* LaunchScreen.storyboard */; };
+		1254F0E41E13B4D2007D897F /* TimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0E11E13B4D2007D897F /* TimeLineView.m */; };
+		1254F0E51E13B4D2007D897F /* TimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0E31E13B4D2007D897F /* TimeLineCell.m */; };
+		1254F0E71E13B4E4007D897F /* timeline.json in Resources */ = {isa = PBXBuildFile; fileRef = 1254F0E61E13B4E4007D897F /* timeline.json */; };
+		1254F1001E13B51A007D897F /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0EC1E13B51A007D897F /* JSONModel.m */; };
+		1254F1011E13B51A007D897F /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0EE1E13B51A007D897F /* JSONModelClassProperty.m */; };
+		1254F1021E13B51A007D897F /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0F01E13B51A007D897F /* JSONModelError.m */; };
+		1254F1031E13B51A007D897F /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0F41E13B51A007D897F /* JSONAPI.m */; };
+		1254F1041E13B51A007D897F /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0F61E13B51A007D897F /* JSONHTTPClient.m */; };
+		1254F1051E13B51A007D897F /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0F81E13B51A007D897F /* JSONModel+networking.m */; };
+		1254F1061E13B51A007D897F /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0FB1E13B51A007D897F /* JSONKeyMapper.m */; };
+		1254F1071E13B51A007D897F /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0FD1E13B51A007D897F /* JSONValueTransformer.m */; };
+		1254F1081E13B51A007D897F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1254F0FE1E13B51A007D897F /* LICENSE */; };
+		1254F1091E13B51A007D897F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1254F0FF1E13B51A007D897F /* README.md */; };
+		1254F10C1E13B534007D897F /* TimeEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F10B1E13B534007D897F /* TimeEventModel.m */; };
+		1254F1101E13B5B9007D897F /* func.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F10F1E13B5B9007D897F /* func.m */; };
+		1254F1131E13B5D2007D897F /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F1121E13B5D2007D897F /* NSDate+DateTools.m */; };
+		1254F1161E13B5E9007D897F /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F1151E13B5E9007D897F /* DTConstants.m */; };
+		1254F1191E13B5FD007D897F /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1254F1181E13B5FD007D897F /* DTError.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +44,40 @@
 		1254F0D31E13B459007D897F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1254F0D61E13B459007D897F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1254F0D81E13B459007D897F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1254F0E01E13B4D2007D897F /* TimeLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineView.h; sourceTree = "<group>"; };
+		1254F0E11E13B4D2007D897F /* TimeLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineView.m; sourceTree = "<group>"; };
+		1254F0E21E13B4D2007D897F /* TimeLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineCell.h; sourceTree = "<group>"; };
+		1254F0E31E13B4D2007D897F /* TimeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineCell.m; sourceTree = "<group>"; };
+		1254F0E61E13B4E4007D897F /* timeline.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeline.json; sourceTree = "<group>"; };
+		1254F0EB1E13B51A007D897F /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		1254F0EC1E13B51A007D897F /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		1254F0ED1E13B51A007D897F /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		1254F0EE1E13B51A007D897F /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		1254F0EF1E13B51A007D897F /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		1254F0F01E13B51A007D897F /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		1254F0F11E13B51A007D897F /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		1254F0F31E13B51A007D897F /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		1254F0F41E13B51A007D897F /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		1254F0F51E13B51A007D897F /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		1254F0F61E13B51A007D897F /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		1254F0F71E13B51A007D897F /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		1254F0F81E13B51A007D897F /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		1254F0FA1E13B51A007D897F /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		1254F0FB1E13B51A007D897F /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		1254F0FC1E13B51A007D897F /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		1254F0FD1E13B51A007D897F /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		1254F0FE1E13B51A007D897F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1254F0FF1E13B51A007D897F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1254F10A1E13B534007D897F /* TimeEventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeEventModel.h; sourceTree = "<group>"; };
+		1254F10B1E13B534007D897F /* TimeEventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeEventModel.m; sourceTree = "<group>"; };
+		1254F10E1E13B5B9007D897F /* func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = func.h; sourceTree = "<group>"; };
+		1254F10F1E13B5B9007D897F /* func.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = func.m; sourceTree = "<group>"; };
+		1254F1111E13B5D2007D897F /* NSDate+DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
+		1254F1121E13B5D2007D897F /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
+		1254F1141E13B5E9007D897F /* DTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTConstants.h; sourceTree = "<group>"; };
+		1254F1151E13B5E9007D897F /* DTConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTConstants.m; sourceTree = "<group>"; };
+		1254F1171E13B5FD007D897F /* DTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTError.h; sourceTree = "<group>"; };
+		1254F1181E13B5FD007D897F /* DTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTError.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +110,10 @@
 		1254F0C61E13B459007D897F /* TimeLineDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1254F10D1E13B5AF007D897F /* utils */,
+				1254F0E81E13B51A007D897F /* JSONModel */,
+				1254F0DF1E13B4BC007D897F /* model */,
+				1254F0DE1E13B4B6007D897F /* view */,
 				1254F0CA1E13B459007D897F /* AppDelegate.h */,
 				1254F0CB1E13B459007D897F /* AppDelegate.m */,
 				1254F0CD1E13B459007D897F /* ViewController.h */,
@@ -77,6 +133,100 @@
 				1254F0C81E13B459007D897F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1254F0DE1E13B4B6007D897F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1254F0E01E13B4D2007D897F /* TimeLineView.h */,
+				1254F0E11E13B4D2007D897F /* TimeLineView.m */,
+				1254F0E21E13B4D2007D897F /* TimeLineCell.h */,
+				1254F0E31E13B4D2007D897F /* TimeLineCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		1254F0DF1E13B4BC007D897F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1254F0E61E13B4E4007D897F /* timeline.json */,
+				1254F10A1E13B534007D897F /* TimeEventModel.h */,
+				1254F10B1E13B534007D897F /* TimeEventModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		1254F0E81E13B51A007D897F /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				1254F0E91E13B51A007D897F /* JSONModel */,
+				1254F0FE1E13B51A007D897F /* LICENSE */,
+				1254F0FF1E13B51A007D897F /* README.md */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		1254F0E91E13B51A007D897F /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				1254F0EA1E13B51A007D897F /* JSONModel */,
+				1254F0F11E13B51A007D897F /* JSONModelLib.h */,
+				1254F0F21E13B51A007D897F /* JSONModelNetworking */,
+				1254F0F91E13B51A007D897F /* JSONModelTransformations */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		1254F0EA1E13B51A007D897F /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				1254F0EB1E13B51A007D897F /* JSONModel.h */,
+				1254F0EC1E13B51A007D897F /* JSONModel.m */,
+				1254F0ED1E13B51A007D897F /* JSONModelClassProperty.h */,
+				1254F0EE1E13B51A007D897F /* JSONModelClassProperty.m */,
+				1254F0EF1E13B51A007D897F /* JSONModelError.h */,
+				1254F0F01E13B51A007D897F /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		1254F0F21E13B51A007D897F /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1254F0F31E13B51A007D897F /* JSONAPI.h */,
+				1254F0F41E13B51A007D897F /* JSONAPI.m */,
+				1254F0F51E13B51A007D897F /* JSONHTTPClient.h */,
+				1254F0F61E13B51A007D897F /* JSONHTTPClient.m */,
+				1254F0F71E13B51A007D897F /* JSONModel+networking.h */,
+				1254F0F81E13B51A007D897F /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		1254F0F91E13B51A007D897F /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				1254F0FA1E13B51A007D897F /* JSONKeyMapper.h */,
+				1254F0FB1E13B51A007D897F /* JSONKeyMapper.m */,
+				1254F0FC1E13B51A007D897F /* JSONValueTransformer.h */,
+				1254F0FD1E13B51A007D897F /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		1254F10D1E13B5AF007D897F /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				1254F1111E13B5D2007D897F /* NSDate+DateTools.h */,
+				1254F1141E13B5E9007D897F /* DTConstants.h */,
+				1254F1151E13B5E9007D897F /* DTConstants.m */,
+				1254F1171E13B5FD007D897F /* DTError.h */,
+				1254F1181E13B5FD007D897F /* DTError.m */,
+				1254F1121E13B5D2007D897F /* NSDate+DateTools.m */,
+				1254F10E1E13B5B9007D897F /* func.h */,
+				1254F10F1E13B5B9007D897F /* func.m */,
+			);
+			name = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +287,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1254F0E71E13B4E4007D897F /* timeline.json in Resources */,
 				1254F0D71E13B459007D897F /* LaunchScreen.storyboard in Resources */,
 				1254F0D41E13B459007D897F /* Assets.xcassets in Resources */,
 				1254F0D21E13B459007D897F /* Main.storyboard in Resources */,
+				1254F1081E13B51A007D897F /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +302,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1254F1041E13B51A007D897F /* JSONHTTPClient.m in Sources */,
+				1254F1021E13B51A007D897F /* JSONModelError.m in Sources */,
+				1254F1011E13B51A007D897F /* JSONModelClassProperty.m in Sources */,
+				1254F1031E13B51A007D897F /* JSONAPI.m in Sources */,
+				1254F1071E13B51A007D897F /* JSONValueTransformer.m in Sources */,
+				1254F0E51E13B4D2007D897F /* TimeLineCell.m in Sources */,
 				1254F0CF1E13B459007D897F /* ViewController.m in Sources */,
+				1254F1061E13B51A007D897F /* JSONKeyMapper.m in Sources */,
+				1254F1051E13B51A007D897F /* JSONModel+networking.m in Sources */,
 				1254F0CC1E13B459007D897F /* AppDelegate.m in Sources */,
+				1254F1131E13B5D2007D897F /* NSDate+DateTools.m in Sources */,
+				1254F1161E13B5E9007D897F /* DTConstants.m in Sources */,
+				1254F1091E13B51A007D897F /* README.md in Sources */,
+				1254F1191E13B5FD007D897F /* DTError.m in Sources */,
+				1254F1001E13B51A007D897F /* JSONModel.m in Sources */,
 				1254F0C91E13B459007D897F /* main.m in Sources */,
+				1254F1101E13B5B9007D897F /* func.m in Sources */,
+				1254F0E41E13B4D2007D897F /* TimeLineView.m in Sources */,
+				1254F10C1E13B534007D897F /* TimeEventModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,43 @@
+[
+ {
+ "timestamp":1479982878800,
+ "event":"out"
+ },
+ {
+ "timestamp":1479939678800,
+ "event":"in"
+ },
+ {
+ "timestamp":1479896478800,
+ "event":"out"
+ },
+ {
+ "timestamp":1479853278800,
+ "event":"in"
+ },
+ {
+ "timestamp":1479810078800,
+ "event":"out"
+ },
+ {
+ "timestamp":1479766878800,
+ "event":"in"
+ },
+ {
+ "timestamp":1479723678800,
+ "event":"out"
+ },
+ {
+ "timestamp":1479680478800,
+ "event":"in"
+ },
+ {
+ "timestamp":1479637278800,
+ "event":"out"
+ },
+ {
+ "timestamp":1479594078800,
+ "event":"in"
+ }
+ 
+]

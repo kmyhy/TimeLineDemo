@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,114 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="66" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pF4-IU-IbD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Iv6-vU-GeK" customClass="TimeLineCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Iv6-vU-GeK" id="F1x-gg-j8S">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12月28日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9L-nV-TfQ">
+                                                    <rect key="frame" x="18" y="24" width="42" height="11"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="JkR-Br-C19"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期五" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-2E-1xa">
+                                                    <rect key="frame" x="18" y="37" width="42" height="11"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="JXU-qt-nUR"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9w-HL-gXV" customClass="TimeLineView">
+                                                    <rect key="frame" x="70" y="0.0" width="13" height="66"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="13" id="Eqk-OZ-ass"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="nodePosition">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="timelineVisible" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="nodeVisible" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="circleVisible" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5f-FZ-079">
+                                                    <rect key="frame" x="108" y="20" width="251" height="13.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宝贝已经到学校啦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoc-BK-EqD">
+                                                    <rect key="frame" x="108" y="37" width="251" height="13.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="d9w-HL-gXV" firstAttribute="leading" secondItem="F1x-gg-j8S" secondAttribute="leading" constant="70" id="2Xl-lO-0KX"/>
+                                                <constraint firstAttribute="trailing" secondItem="Yoc-BK-EqD" secondAttribute="trailing" constant="16" id="3iJ-m4-BRw"/>
+                                                <constraint firstAttribute="trailing" secondItem="w5f-FZ-079" secondAttribute="trailing" constant="16" id="4Cw-51-pan"/>
+                                                <constraint firstItem="d9w-HL-gXV" firstAttribute="top" secondItem="F1x-gg-j8S" secondAttribute="top" id="8yg-nL-wsc"/>
+                                                <constraint firstItem="B9L-nV-TfQ" firstAttribute="top" secondItem="F1x-gg-j8S" secondAttribute="topMargin" constant="16" id="KMq-ga-Ijw"/>
+                                                <constraint firstItem="Yoc-BK-EqD" firstAttribute="top" secondItem="w5f-FZ-079" secondAttribute="bottom" constant="3.5" id="MQb-oh-LRH"/>
+                                                <constraint firstItem="w5f-FZ-079" firstAttribute="leading" secondItem="d9w-HL-gXV" secondAttribute="trailing" constant="25" id="PeK-z3-IMn"/>
+                                                <constraint firstItem="gF6-2E-1xa" firstAttribute="top" secondItem="B9L-nV-TfQ" secondAttribute="bottom" constant="2" id="Uyq-9v-Kbb"/>
+                                                <constraint firstItem="w5f-FZ-079" firstAttribute="top" secondItem="F1x-gg-j8S" secondAttribute="top" constant="20" id="Xg7-SB-UGr"/>
+                                                <constraint firstItem="Yoc-BK-EqD" firstAttribute="leading" secondItem="d9w-HL-gXV" secondAttribute="trailing" constant="25" id="ZVm-1s-6tY"/>
+                                                <constraint firstItem="B9L-nV-TfQ" firstAttribute="leading" secondItem="F1x-gg-j8S" secondAttribute="leading" constant="18" id="tJU-Br-L8H"/>
+                                                <constraint firstItem="gF6-2E-1xa" firstAttribute="leading" secondItem="F1x-gg-j8S" secondAttribute="leadingMargin" constant="10" id="xUU-jW-NGl"/>
+                                                <constraint firstAttribute="bottom" secondItem="d9w-HL-gXV" secondAttribute="bottom" id="zeF-XR-HRx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lbDate" destination="B9L-nV-TfQ" id="27K-GG-Sm2"/>
+                                            <outlet property="lbDay" destination="gF6-2E-1xa" id="Z16-UF-Uq7"/>
+                                            <outlet property="lbEvent" destination="Yoc-BK-EqD" id="oCO-ic-saj"/>
+                                            <outlet property="lbTime" destination="w5f-FZ-079" id="fFD-yR-XLg"/>
+                                            <outlet property="timeLineView" destination="d9w-HL-gXV" id="Lsb-9R-fKz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Mwe-mE-7Gt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pF4-IU-IbD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QUD-VM-gXF"/>
+                            <constraint firstAttribute="trailing" secondItem="pF4-IU-IbD" secondAttribute="trailing" id="Zct-Qf-kK5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pF4-IU-IbD" secondAttribute="bottom" id="jSs-b6-Oc7"/>
+                            <constraint firstItem="pF4-IU-IbD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="mOV-Tq-2fb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="pF4-IU-IbD" id="yeD-3p-wNI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="188" y="93"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
 </document>
